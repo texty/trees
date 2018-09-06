@@ -335,6 +335,14 @@ div#layerControl span {
         grid-template-columns: auto auto auto auto auto auto auto auto;
     }
 
+    div#donors-mob img{
+        margin: auto;
+    }
+
+    img.smaller {
+        height: 35px;
+    }
+
 
 }
 
