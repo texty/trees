@@ -261,7 +261,8 @@ path.domain {
     grid-column: 1/3;
     display: grid;
     grid-template-columns: auto 220px 80px 190px 220px 120px 220px auto;
-    /*grid-template-columns: auto minmax(2fr, 220px) minmax(2fr, 80px) minmax(2fr, 190px) minmax(2fr, 220px) minmax(2fr, 120px) minmax(2fr, 220px) auto;*/
+    /*grid-template-columns: auto auto auto auto auto auto auto auto;*/
+
 }
 
 g.tick {
@@ -328,6 +329,10 @@ div#layerControl span {
 
     div#mapScreen-right {
         width: 0;
+    }
+
+    div#donors-mob {
+        grid-template-columns: auto auto auto auto auto auto auto auto;
     }
 
 
