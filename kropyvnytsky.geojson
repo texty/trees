@@ -1,0 +1,1125 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,алея між вулицями Волкова та Бєляєва"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вздовж річки Інгул, від вул. Київської до вул. Жовтневої революції"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,від буд. № 8 до буд. 14 по вул. Героїв Сталінграда"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.6770961,48.7192002 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вїзд з м. Знамянка"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.6770961,48.7192002 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вїзд з м. Знамянка"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вїзд з м. Кривий Ріг"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вїзд з м. Кривий Ріг"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2556826,48.4935325 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вуд. Яновського, 50"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.246611,48.5018131 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул Соборна, 24-а"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул.  Дружби народів, 8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.263272,48.5099147 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул.  Тимірязєва, 58"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 20 років Міліції, 2-а"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 20 років Міліції, 26"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 20 років Міліції, 56"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2706019,48.49061 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40 річчя Перемоги, 11"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги  (від кафе \"Альфа \" до мосту)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.269879,48.48775 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги ,51"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2706043,48.4820909 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 105"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2710636,48.4813813 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 107"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2718872,48.4759298 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 108-а"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2703489,48.4728056 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 146"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2694561,48.4888157 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 24"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2695409,48.4886904 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 26/33"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.271696,48.489693 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 27-13"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2694412,48.4873182 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 32"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2698202,48.4911705 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 4/1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2705053,48.4886601 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 41/35"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.270581,48.488202 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 53-45"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.269246,48.48425599999999 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 58/49"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2695312,48.4840622 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 62"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.270435,48.486888 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 63/45"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2706171,48.491038 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2706171,48.491038 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2694781,48.483771 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 70/2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.270374,48.4843931 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 87"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2704561,48.48387779999999 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 95"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.27047,48.483863 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 95-89"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.270356,48.4835611 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 40-річчя Перемоги, 97"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2788364,48.4715772 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 5-а Лінія сел. Гірниче"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 50 років Радянської Армії (ЗОШ № 12)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 50 років Радянської Армії, 12 (ЗОШ № 12)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2755374,48.52537239999999 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. 8-го Березня, 6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Авіаційна (біля парку ім. Крючкова)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2642256,48.5304291 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Авіаційна, 64"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.226532,48.487799 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Автолюбителів, 5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2883583,48.5132747 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Аджамська, 29"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2117845,48.52051910000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Аерофлотська, 15"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2159854,48.5215149 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Аерофлотська, 5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2337059,48.5055913 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 11"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2314702,48.5068466 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 11-а"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2312156,48.5063706 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.23059480000001,48.5064777 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 21"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2277193,48.50668140000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 27 ЗОШ № 9"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2314702,48.5068466 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 28 (підїзд 1)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.224923,48.507392 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 29 ДНЗ № 47"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.235588,48.5032615 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2309823,48.5071399 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 30"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2310803,48.5068964 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 32/4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.231229,48.506377 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 34/19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2261553,48.5078667 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 36"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.236853,48.5034532 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.234293,48.50462419999999 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2334633,48.5047751 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Корольова, 9"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2368108,48.499674 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Тамма, 10"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2368108,48.499674 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Тамма, 21"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2368108,48.499674 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Тамма, 3/163"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2368108,48.499674 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Тамма, 5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2368108,48.499674 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Тамма, 9"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.233952,48.4984362 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Академіка Тамма, від вул. Курганної до вул. Волкова"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2490257,48.4922882 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Аксьнкіної, 61/15"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2490257,48.4922882 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Аксьонкіної, 61/15"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська (вздовж вулиці)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2506021,48.51129270000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 10"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2504979,48.5111512 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 12"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2464471,48.5088284 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 12, корп. 2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2495892,48.5097816 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 17/11"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2477603,48.5087002 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 31"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2450601,48.5058023 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 59"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2447603,48.5059832 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 60"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2443251,48.5056407 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 62"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2443251,48.5056407 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 62"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2429203,48.5047375 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 66"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.24299999999999,48.5037052 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 75"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2418856,48.5025308 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 87"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2416361,48.5021411 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 89"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2506935,48.5108288 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, 9"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.262317,48.50793300000001 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андріївська, навпроти  № 80"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2804838,48.5176329 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андрія Матвієнка (Башкирська)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2811582,48.5152813 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Андрія Матвієнка (Башкирська) ЗОШ № 26"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.272133,48.509909 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського (біля церкви)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.272133,48.509909 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 1-а"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2749164,48.512578 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 11"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2761757,48.5140439 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 12"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2747778,48.5124207 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 13"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.276117,48.5140703 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 14"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.278735,48.5163432 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 16, корп. 1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2783387,48.51601489999999 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 16, корп. 3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2783387,48.51601489999999 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 16, корп. 3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2755984,48.5134805 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 16, корп. 4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2755216,48.5134048 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2754448,48.513329 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 18"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2783987,48.516248 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2751376,48.513026 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 23-а"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2745138,48.5125004 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 24-а"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2751376,48.513026 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 25"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2745112,48.5125014 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 26"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2783387,48.51601489999999 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2783387,48.51601489999999 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2720696,48.50969689999999 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 33"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2719689,48.5095695 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 35"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2713444,48.5090845 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 36"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.2709222,48.5084895 ]
+    },
+    "properties": {
+    "adress":"Кропивницький,вул. Арсенія Тарковського, 43-а"
+    }
+  }
+]
+}

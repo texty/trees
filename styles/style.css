@@ -1,0 +1,355 @@
+html *
+{
+    font-family: "Open Sans" !important;
+}
+
+body {
+    margin:0;
+    padding:0;
+    /*background-color:#080808;*/
+    background-color: #fafaf8;
+}
+
+
+#mapid {
+    z-index: 1;
+    position: relative;
+    height: 100vh;
+}
+
+
+#title h1 {
+    text-align: center;
+    color: #b5b1af;
+}
+
+
+div.logo {
+    background-color: #1e00e1;
+}
+
+div#mapScreen-right {
+    display: flex;
+    flex-direction: column;
+}
+
+div#mapScreen {
+    display: flex;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+div#mapScreen-right {
+    width: 30%;
+}
+
+div#map {
+    width: 70%;
+}
+
+.mystyle {
+    z-index: 1;
+    display: none;
+    overflow-y: auto;
+    border-radius: 5px;
+    padding: 6px;
+    margin-right: 10px;
+    display: flex !important;
+    flex-direction: column !important;
+
+
+}
+div.mystyle h3 {
+    font-size: 1em;
+}
+
+
+.tree {
+    cursor: pointer;
+    color: #c95107;
+}
+
+.wrapper {
+    position: relative;
+    margin-bottom: 5em;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.info {
+    padding: 6px 8px;
+}
+
+
+.legend {
+    line-height: 18px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+div.mystyle p {
+    margin-top: .5em;
+    margin-bottom: .5em
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.xAxis > g:nth-child(13) > text:nth-child(2), button.button {
+    display:inline-block;
+}
+
+button.button {
+    margin-right:10px;
+}
+
+
+.leaflet-top, .leaflet-right, .leaflet-control-layers {
+    display: flex !important;
+    flex-direction: column !important;
+
+}
+
+div.leaflet-control-layers, div.info {
+    /*color:#b5b1af;*/
+}
+
+.leaflet-control-layers {
+    box-shadow: none;
+}
+
+.leaflet-control-layers-expanded {
+    background: #fafaf8;
+}
+
+div.leaflet-control-layers input {
+    /*display: none;*/
+}
+
+.leaflet-control-layers-base > label > div > span {
+    font-size: 1em;
+    font-weight: bold;
+}
+.leaflet-control-layers-base > label > div > span:hover {
+    cursor: pointer;
+}
+
+
+
+.mapBottomNavigation {
+    position: absolute;
+    bottom: 3.5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    white-space: nowrap;
+    width: 75vh;
+    overflow-y: auto;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+    z-index: 1000;
+    /*border: 2px solid rgba(0, 0, 0, 0.2);*/
+    /*background-color: white;*/
+    padding: 6px;
+}
+
+
+g.xAxis line {
+    stroke: rgba(0, 0 , 0, 0);
+}
+
+path.domain {
+    stroke: rgba(0, 0 , 0, 0);
+}
+
+.bar:hover {
+    opacity: 1;
+    cursor: pointer;
+    fill: black;
+}
+
+.button, .bars {
+    display: inline-block;
+    /*vertical-align: middle;*/
+}
+
+.bars {
+    width: 90%;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0);
+    padding-inline-end: 0;
+    border: 0px outset ThreeDLightShadow;
+    padding-inline-end: 0px;
+    padding-block-end: 0px;
+    padding-inline-start: 0px;
+    outline: 0px;
+    cursor: pointer;
+}
+
+.tick text .domain {
+    fill: grey;
+    stroke: grey;
+    font-size: 3em;
+}
+
+.mapBottomNavigation h4 {
+    /*text-align: center;*/
+    color: #b5b1af;
+    position: absolute;
+    bottom: 60%;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 120px;
+    height: 30px; }
+
+.gif {
+    border-radius: 5px; }
+
+.social-icons {
+    height: 30px; }
+
+#facebook, #twitter {
+    width: 30px;
+    height: 30px; }
+
+#facebook {
+    position: absolute;
+    top: 5px;
+    right: 50px; }
+
+#twitter {
+    position: absolute;
+    top: 5px;
+    right: 10px; }
+
+#text {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    color: white;
+    margin-bottom: 150px; }
+
+#header {
+    height: 100vh;
+    background-image: url(../image/tree2.jpg);
+    background-size: cover;
+    margin: 0 !important;
+}
+
+#donors-mob {
+    margin-top: 4em;
+    margin-bottom: 1em;
+    background-color: #ffffff;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: auto 220px 80px 190px 220px 120px 220px auto;
+}
+
+g.tick {
+    background-color: #a0a0a0;
+}
+
+div#layerControl {
+    font-size: 1.17em;
+}
+
+div#layerControl label {
+    margin-bottom: 5px;
+}
+
+div#leaflet-control-layers-base {
+    font-size: 1em;
+}
+
+div#layerControl span {
+    /*border-bottom: 3px dotted #c95107;*/
+}
+
+
+.selectedBaseLayer {
+    border-bottom: 3px dotted #c95107;
+}
+
+.selectedBar {
+    fill: black;
+}
+
+.unselectedBaseLayer {
+    border-bottom: 0px;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .mapBottomNavigation {
+        display: none;
+    }
+
+    .leaflet-top .leaflet-right {
+        width: 10%;
+    }
+    .div.leaflet-control-layers div.leaflet-control-layers-expanded div.leaflet-control div.info {
+        margin-right: 0px;
+    }
+
+    div#mapScreen-right {
+        display: none;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    div#mapScreen {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    div#map {
+        width: 100%;
+    }
+
+    div#mapScreen-right {
+        width: 0;
+    }
+
+
+}
+
+h3.text {
+    text-align: center;
+    vertical-align: center;
+    margin-bottom: 20px;
+}
+
+p.text a {
+    text-decoration: none;
+    color: #c95107;
+    border-bottom: 2px dotted #cccccc;
+}
+
+p.text {
+    width: 55%;
+    color: #322d2a;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5em;
+    /*font-family: "Segoe UI Light", sans-serif !important;*/
+}
