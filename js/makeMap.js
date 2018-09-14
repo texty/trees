@@ -224,11 +224,21 @@ function createMap(data, branch, planted) {
         d3.select(".mystyle").append("p").attr("class", "total").text(
             "Адреса: " + d.layer.feature.properties.streetAddress);
 
-        d3.select(".mystyle").append("p").attr("class", "act").text(
-            "Номер акту: " + d.layer.feature.properties.identifier);
+        d3.select(".mystyle").append("p").attr("class", "act")
+                .text(function () {
+                    if (d.layer.feature.properties.customerName !== 'null'
+                        && d.layer.feature.properties.customerName !== ''
+                        && typeof d.layer.feature.properties.customerName !== 'undefined') {
+                        return "Номер акту: " + d.layer.feature.properties.identifier
+                    }
+                    else {
+                        d3.select("p.order").remove();
+                    }
+                }
+        );
 
         d3.select(".mystyle").append("p").attr("class", "order").text(function (dd) {
-                if (d.layer.feature.properties.customerName !== 'null' 
+                if (d.layer.feature.properties.customerName !== 'null'
                     && d.layer.feature.properties.customerName !== ''
                     && typeof d.layer.feature.properties.customerName !== 'undefined') {
                     return "Ім'я/Назва замовника: " + d.layer.feature.properties.customerName
