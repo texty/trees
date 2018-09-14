@@ -228,7 +228,8 @@ function createMap(data, branch, planted) {
             "Номер акту: " + d.layer.feature.properties.identifier);
 
         d3.select(".mystyle").append("p").attr("class", "order").text(function (dd) {
-                if (d.layer.feature.properties.customerName !== 'unknown'
+                if (d.layer.feature.properties.customerName !== 'null' 
+                    && d.layer.feature.properties.customerName !== ''
                     && typeof d.layer.feature.properties.customerName !== 'undefined') {
                     return "Ім'я/Назва замовника: " + d.layer.feature.properties.customerName
                 }
