@@ -426,9 +426,11 @@ function createMap(data, branch, planted) {
     mymap.on('zoomend', function () {
         //var currZoom = mymap.getZoom();
 
+        debugger;
+
         geojsonLayer.eachLayer(function(layer){
             var currZoom = mymap.getZoom();
-            if (+layer.feature.properties.number > 1) {
+            if (+layer.feature.properties.itemQuantityPlan > 1) {
                 layer.setLatLng({
                     lat: +layer.feature.properties['LatLon' + currZoom][1],
                     lng: +layer.feature.properties['LatLon' + currZoom][0]
@@ -438,7 +440,7 @@ function createMap(data, branch, planted) {
 
         geojsonLayerBranch.eachLayer(function(layer){
             var currZoom = mymap.getZoom();
-            if (+layer.feature.properties.number > 1) {
+            if (+layer.feature.properties.itemQuantityPlan > 1) {
                 layer.setLatLng({
                     lat: +layer.feature.properties['LatLon' + currZoom][1],
                     lng: +layer.feature.properties['LatLon' + currZoom][0]
@@ -449,7 +451,7 @@ function createMap(data, branch, planted) {
 
         geojsonLayerPlanted.eachLayer(function(layer){
             var currZoom = mymap.getZoom();
-            if (+layer.feature.properties.number > 1) {
+            if (+layer.feature.properties.itemQuantityPlan > 1) {
                 layer.setLatLng({
                     lat: +layer.feature.properties['LatLon' + currZoom][1],
                     lng: +layer.feature.properties['LatLon' + currZoom][0]
