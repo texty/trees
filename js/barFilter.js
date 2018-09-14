@@ -24,21 +24,24 @@
     var formatMonth = d3.timeFormat("%b");
     var formatYear = d3.timeFormat("%Y");
 
-    function multiFormat(date) {
-        return (d3.timeYear(date) < date ? formatMonth : formatYear)(date);
-    }
+    // function multiFormat(date) {
+    //     return (d3.timeYear(date) < date ? formatMonth : formatYear)(date);
+    // }
 
 
    d3.selectAll(".bars svg").remove();
 
+    debugger;
+    
     data = data
-        .filter(function(d){return d.date_UTF !== "NotYet" && d.date_UTF !== "1"})
-        .filter(function(d){return d.date_UTF});
+        //.filter(function(d){return d.orderDate !== "NotYet"})
+        .filter(function(d){return d.orderDate || d.datePlanted});
+
 
     var barChartData = d3.nest()
-        .key(function(d) {return d.date_UTF.slice(3)})
+        .key(function(d) {return d.orderDate.slice(2,-3)})
         .sortKeys(d3.ascending)
-        .rollup(function(v) { return d3.sum(v, function(d) { return +d.number }); })
+        .rollup(function(v) { return d3.sum(v, function(d) { return +d.itemQuantityPlan }); })
         .entries(data);
 
     barChartData.forEach(function (d) {
@@ -71,8 +74,8 @@
         .range([height, 0])
 
 
-    var parseInputDate = d3.timeParse("%y.%m");
-    var formatInputDate = d3.timeFormat("%y.%m");
+    var parseInputDate = d3.timeParse("%Y.%m");
+    var formatInputDate = d3.timeFormat("%Y.%m");
 
     //
     var dateToTick = d3.timeFormat("%b %Y");
@@ -92,6 +95,8 @@
     y.domain([0, d3.max(barChartData, function(d) { return d.value; })]);
 
 // append the rectangles for the bar chart
+
+
     svg.selectAll(".bar")
         .data(barChartData)
         .enter().append("rect")
@@ -108,15 +113,15 @@
             returnColors();
             d3.select(this).attr("class", "selectedBar");
             geojsonLayer.setStyle(function(feature){
-                if (!(feature.properties.date_UTF.split(".")[1] === d.key.split(".")[1]))
+                if (!(feature.properties.orderDate.split("-")[1] ===  d.key.split(".")[1]))
                     return {fillColor: 'rgba(0,0,0,0)'}
             });
             geojsonLayerBranch.setStyle(function(feature){
-                if (!(feature.properties.date_UTF.split(".")[1] === d.key.split(".")[1]))
+                if (!(feature.properties.orderDate.split("-")[1] ===  d.key.split(".")[1]))
                     return {fillColor: 'rgba(0,0,0,0)'}
             });
             geojsonLayerPlanted.setStyle(function(feature){
-                if (!(feature.properties.date_UTF.split(".")[1] === d.key.split(".")[1]))
+                if (!(feature.properties.datePlanted.split("-")[1] ===  d.key.split(".")[1]))
                     return {fillColor: 'rgba(0,0,0,0)'}
             });
         });
@@ -136,7 +141,7 @@
             return styleForLayer(feature);
         });
         geojsonLayerBranch.setStyle(function (feature) {
-            if (feature.properties.was_cut == 'true') {
+            if (feature.properties.status == 'Замовлення виконано підрядником') {
                 return {fillColor: "#ff005a", color: "rgba(0, 0, 0, 0);"};
             }
             else {
@@ -145,7 +150,7 @@
         });
 
         geojsonLayerPlanted.setStyle(function(feature){
-            if (feature.properties.was_cut == 'true') {
+            if (feature.properties.status == 'Замовлення виконано підрядником') {
                 return {fillColor: "#00e13a", color: "rgba(0, 0, 0, 0);"};
             }
             else {
@@ -174,8 +179,8 @@
     }
 
     function swapMonthAndYear(str) {
-        var a = str.split(".");
-        return a[1] + "." + a[0];
+        var a = str.split("-");
+        return a[0] + "." + a[1] ;
     }
 
 

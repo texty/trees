@@ -24,7 +24,7 @@ function createMap(data, branch, planted) {
             //     result_list.push(d)
             // }
             // else {
-                makeObjectCopy(+d.number, d);
+                makeObjectCopy(+d.itemQuantityPlan, d);
             // }
         });
 
@@ -32,27 +32,27 @@ function createMap(data, branch, planted) {
 
 
 
-            if (obj.number > 1) {
-                obj["LatLon13"] = [+obj.Longitude + (getRandomArbitrary(-0.003,0.003)),
-                    +obj.Latitude + (getRandomArbitrary(-0.003,0.003))];
+            if (obj.itemQuantityPlan > 1) {
+                obj["LatLon13"] = [+obj.longitude + (getRandomArbitrary(-0.003,0.003)),
+                    +obj.latitude + (getRandomArbitrary(-0.003,0.003))];
 
-                obj["LatLon14"] = [+obj.Longitude + (getRandomArbitrary(-0.0025,0.0025)),
-                    +obj.Latitude + (getRandomArbitrary(-0.0025,0.0025))];
+                obj["LatLon14"] = [+obj.longitude + (getRandomArbitrary(-0.0025,0.0025)),
+                    +obj.latitude + (getRandomArbitrary(-0.0025,0.0025))];
 
-                obj["LatLon15"] = [+obj.Longitude + (getRandomArbitrary(-0.002,0.002)),
-                    +obj.Latitude + (getRandomArbitrary(-0.002,0.002))];
+                obj["LatLon15"] = [+obj.longitude + (getRandomArbitrary(-0.002,0.002)),
+                    +obj.latitude + (getRandomArbitrary(-0.002,0.002))];
 
-                obj["LatLon16"] = [+obj.Longitude + (getRandomArbitrary(-0.0015,0.0015)),
-                    +obj.Latitude + (getRandomArbitrary(-0.0015,0.0015))];
+                obj["LatLon16"] = [+obj.longitude + (getRandomArbitrary(-0.0015,0.0015)),
+                    +obj.latitude + (getRandomArbitrary(-0.0015,0.0015))];
 
-                obj["LatLon17"] = [+obj.Longitude + (getRandomArbitrary(-0.001,0.001)),
-                    +obj.Latitude + (getRandomArbitrary(-0.001,0.001))];
+                obj["LatLon17"] = [+obj.longitude + (getRandomArbitrary(-0.001,0.001)),
+                    +obj.latitude + (getRandomArbitrary(-0.001,0.001))];
 
-                obj["LatLon18"] = [+obj.Longitude + (getRandomArbitrary(-0.0005,0.0005)),
-                    +obj.Latitude + (getRandomArbitrary(-0.0005,0.0005))];
+                obj["LatLon18"] = [+obj.longitude + (getRandomArbitrary(-0.0005,0.0005)),
+                    +obj.latitude + (getRandomArbitrary(-0.0005,0.0005))];
 
-                obj.Longitude = +obj.Longitude + (getRandomArbitrary(-0.003,0.003));
-                obj.Latitude = +obj.Latitude + (getRandomArbitrary(-0.003,0.003));
+                obj.longitude = +obj.longitude + (getRandomArbitrary(-0.003,0.003));
+                obj.latitude = +obj.latitude + (getRandomArbitrary(-0.003,0.003));
             }
             else {
                 obj
@@ -66,7 +66,7 @@ function createMap(data, branch, planted) {
                 properties: d,
                 geometry: {
                     type: "Point",
-                    coordinates: [+d.Longitude, +d.Latitude]
+                    coordinates: [+d.longitude, +d.latitude]
                 }
             }
         });
@@ -222,15 +222,15 @@ function createMap(data, branch, planted) {
 
 
         d3.select(".mystyle").append("p").attr("class", "total").text(
-            "Адреса: " + d.layer.feature.properties.tree_adress_shorten);
+            "Адреса: " + d.layer.feature.properties.streetAddress);
 
         d3.select(".mystyle").append("p").attr("class", "act").text(
-            "Номер акту: " + d.layer.feature.properties.act_number);
+            "Номер акту: " + d.layer.feature.properties.identifier);
 
         d3.select(".mystyle").append("p").attr("class", "order").text(function (dd) {
-                if (d.layer.feature.properties.name_who_ordered !== 'unknown'
-                    && typeof d.layer.feature.properties.name_who_ordered !== 'undefined') {
-                    return "Ім'я/Назва замовника: " + d.layer.feature.properties.name_who_ordered
+                if (d.layer.feature.properties.customerName !== 'unknown'
+                    && typeof d.layer.feature.properties.customerName !== 'undefined') {
+                    return "Ім'я/Назва замовника: " + d.layer.feature.properties.customerName
                 }
                 else {
                     d3.select("p.order").remove();
@@ -239,23 +239,23 @@ function createMap(data, branch, planted) {
         );
 
         d3.select(".mystyle").append("p")
-            .attr("id", d.layer.feature.properties.tree_characteristics)
+            .attr("id", d.layer.feature.properties.itemSpecies)
             .attr("class", "tree")
-            .text("Вид дерева: " + d.layer.feature.properties.tree_characteristics)
+            .text("Вид дерева: " + d.layer.feature.properties.itemSpecies)
             .on('mouseover', function () {
                 var sel = this.id;
                 geojsonLayer.setStyle(function (d) {
-                    if (!(d.properties.tree_characteristics == sel)) {
+                    if (!(d.properties.itemSpecies == sel)) {
                         return {fillOpacity: "0.1"};
                     }
                 });
                 geojsonLayerBranch.setStyle(function (d) {
-                    if (!(d.properties.tree_characteristics == sel)) {
+                    if (!(d.properties.itemSpecies == sel)) {
                         return {fillOpacity: "0.1"};
                     }
                 });
                 geojsonLayerPlanted.setStyle(function (d) {
-                    if (!(d.properties.tree_characteristics == sel)) {
+                    if (!(d.properties.itemSpecies == sel)) {
                         return {fillOpacity: "0.1"};
                     }
                 })
@@ -263,17 +263,17 @@ function createMap(data, branch, planted) {
             .on('mouseout', function () {
                 var sel = this.id;
                 geojsonLayer.setStyle(function (d) {
-                    if (!(d.properties.tree_characteristics == sel)) {
+                    if (!(d.properties.itemSpecies == sel)) {
                         return {fillOpacity: "0.75"};
                     }
                 })
                 geojsonLayerBranch.setStyle(function (d) {
-                    if (!(d.properties.tree_characteristics == sel)) {
+                    if (!(d.properties.itemSpecies == sel)) {
                         return {fillOpacity: "0.75"};
                     }
                 })
                 geojsonLayerPlanted.setStyle(function (d) {
-                    if (!(d.properties.tree_characteristics == sel)) {
+                    if (!(d.properties.itemSpecies == sel)) {
                         return {fillOpacity: "0.75"};
                     }
                 })
@@ -369,7 +369,7 @@ function createMap(data, branch, planted) {
 
         if (eventLayer.name === 'Обрізування гілок') {
             geojsonLayerBranch.setStyle(function (feature) {
-                if (feature.properties.was_cut == 'true') {
+                if (feature.properties.status == 'Замовлення виконано підрядником') {
                     return {fillColor: "#ff005a", color: "rgba(0, 0, 0, 0);"};
                 }
                 else {
@@ -395,7 +395,7 @@ function createMap(data, branch, planted) {
         }
         if (eventLayer.name === 'Висадження нових дерев') {
             geojsonLayerPlanted.setStyle(function (feature) {
-                if (feature.properties.was_cut == 'true') {
+                if (feature.properties.status == 'Замовлення виконано підрядником') {
                     return {fillColor: "#00e13a", color: "rgba(0, 0, 0, 0);"};
                 }
                 else {

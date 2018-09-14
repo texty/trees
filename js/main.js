@@ -25,7 +25,7 @@ var CartoDB_Positron = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fast
 
 function styleForLayer(feature) {
 
-    if (feature.properties.was_cut == 'True') {
+    if (feature.properties.status == 'Замовлення виконано підрядником') {
         return {fillColor: "#ff005a", color: "rgba(0, 0, 0, 0);", fillOpacity: "0.75"};
     }
     else {
@@ -41,11 +41,13 @@ function getRandomArbitrary(min, max) {
 
 
     d3.queue()
-        .defer(d3.csv, "data/cleaned_tree_3.csv")
-        .defer(d3.csv, "data/branch_2.csv")
-        .defer(d3.csv, "data/tree_planted_2.csv")
+        .defer(d3.csv, "data/vydalennjaZN.csv")
+        .defer(d3.csv, "data/obrizkaZN.csv")
+        .defer(d3.csv, "data/vysadzennjaZN.csv")
         .await(function (err, data, branch, planted) {
             if (err) throw err;
+            debugger;
+
             createMap(data, branch, planted);
             createBar(data, branch, planted);
 
