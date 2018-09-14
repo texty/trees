@@ -303,21 +303,21 @@ function createMap(data, branch, planted) {
 
             d3.select("div.mystyle").style("display", "none");
             d3.selectAll(".mystyle *").remove();
-            createBar(data);
+            createBar(data, "Видалення дерев");
         }
         if (e.name == 'Обрізування гілок') {
 
 
             d3.select("div.mystyle").style("display", "none");
             d3.selectAll(".mystyle *").remove();
-            createBar(branch);
+            createBar(branch, "Обрізування гілок");
         }
         if (e.name == 'Висадження нових дерев') {
 
 
             d3.select("div.mystyle").style("display", "none");
             d3.selectAll(".mystyle *").remove();
-            createBar(planted);
+            createBar(planted, "Висадження нових дерев");
         }
 
     });

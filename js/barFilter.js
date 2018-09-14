@@ -2,7 +2,7 @@
  * Created by ptr_bodnar on 26.07.18.
  */
 
- function createBar(data, branch, planted) {
+ function createBar(data, branch, planted, name) {
     //
 // D3 locale change
 //
@@ -31,15 +31,22 @@
 
    d3.selectAll(".bars svg").remove();
 
+    console.log(name);
     debugger;
-    
+
+
     data = data
         //.filter(function(d){return d.orderDate !== "NotYet"})
         .filter(function(d){return d.orderDate || d.datePlanted});
 
 
     var barChartData = d3.nest()
-        .key(function(d) {return d.orderDate.slice(2,-3)})
+        .key(function(d) { if (d.orderDate == undefined) {
+            return d.datePlanted.slice(2,-3)
+        } else {
+            return d.orderDate.slice(2,-3)
+        }
+        })
         .sortKeys(d3.ascending)
         .rollup(function(v) { return d3.sum(v, function(d) { return +d.itemQuantityPlan }); })
         .entries(data);
