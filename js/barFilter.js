@@ -31,8 +31,6 @@
 
    d3.selectAll(".bars svg").remove();
 
-    console.log(name);
-    debugger;
 
 
     data = data
@@ -81,23 +79,26 @@
         .range([height, 0])
 
 
-    var parseInputDate = d3.timeParse("%Y.%m");
-    var formatInputDate = d3.timeFormat("%Y.%m");
+    var parseInputDate = d3.timeParse("%y.%m");
+    var formatInputDate = d3.timeFormat("%y.%m");
 
     //
     var dateToTick = d3.timeFormat("%b %Y");
     var outputDateFormat = function(str) {
+        debugger;
         return dateToTick(parseInputDate(str));
     };
 
 
-    var minMonth = d3.min(barChartData.map(function(d){return d.key}));
+
+    var minMonth = d3.max(barChartData.map(function(d){return d.key}));
     var x_domain = [];
 
     for (var i = 0; i < 12; i++) {
         x_domain.push(addMonths(minMonth, i));
     }
 
+    x_domain = x_domain.sort((a,b) => a-b ) 
     x.domain(x_domain);
     y.domain([0, d3.max(barChartData, function(d) { return d.value; })]);
 
@@ -182,7 +183,7 @@
         .call(d3.axisLeft(y));
 
     function addMonths(str, n) {
-        return moment(str, "YY.MM").add(n, "month").format("YY.MM");
+        return moment(str, "YY.MM").subtract(n, "month").format("YY.MM");
     }
 
     function swapMonthAndYear(str) {

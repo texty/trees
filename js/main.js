@@ -44,12 +44,30 @@ function getRandomArbitrary(min, max) {
         .defer(d3.csv, "data/vydalennjaZN.csv")
         .defer(d3.csv, "data/obrizkaZN.csv")
         .defer(d3.csv, "data/vysadzennjaZN.csv")
-        .await(function (err, data, branch, planted) {
+        .defer(d3.csv, "vydalennia_new.csv")
+        .await(function (err, data, branch, planted, newD) {
             if (err) throw err;
-            debugger;
 
-            createMap(data, branch, planted);
-            createBar(data, branch, planted);
+            debugger
+
+            var newestDate = newD.sort((a, b) => new Date(b.orderDate) - new Date(a.orderDate))[0].orderDate
+            var oldestDate = moment(newestDate, "YYYY-MM-DD").subtract(1, 'year').format("YYYY-MM-DD");
+
+            var filteredData = newD.filter(d => {
+            
+
+                // moment(str, "YY.MM.DD").subtract(n, "year").format("YY.MM");
+                return ((d.latitude != 'null') & (d.orderDate > oldestDate))
+            })
+
+            // filteredData.sort((a, b) => new Date(a.orderDate) - new Date(b.orderDate));
+
+
+            // var total = data.concat(filteredData)
+
+
+            createMap(filteredData, branch, planted);
+            createBar(filteredData, branch, planted);
 
 
         });

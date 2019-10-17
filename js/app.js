@@ -13,10 +13,13 @@ var app5 = new Vue({
                 .defer(d3.csv, "data/cleaned_tree.csv")
                 .defer(d3.csv, "data/branch.csv")
                 .defer(d3.csv, "data/tree_planted.csv")
-                .await(function (err, data, branch, planted) {
+                .defer(d3.csv, "vydalennia_new.csv")
+                .await(function (err, data, branch, planted, vydalennia) {
                     if (err) throw err;
 
-                    console.log(event);
+                    console.log(data)
+                    console.log('gdgd')
+                    // console.log(vydalennia);
                     // createMap(data, branch, planted);
                     // createBar(data);
 
