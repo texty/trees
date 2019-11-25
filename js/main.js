@@ -3,13 +3,7 @@
  */
 var mymap = L.map('mapid').setView([48.51, 32.25], 13);
 //
-// L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-//     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-//     minZoom: 13,
-//     maxZoom: 18,
-//     id: 'mapbox.dark',
-//     accessToken: 'pk.eyJ1IjoicHRyYmRyIiwiYSI6ImNqZG12dWdtYzBwdzgyeHAweDFueGZrYTYifQ.ZJ2tgs6E94t3wBwFOyRSBQ'
-// }).addTo(mymap);
+
 
 var CartoDB_Positron = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
@@ -41,7 +35,7 @@ function getRandomArbitrary(min, max) {
 
 
     d3.queue()
-        .defer(d3.csv, "data/vydalennjaZN.csv")
+        .defer(d3.csv, "data/latest_data.csv")
         .defer(d3.csv, "data/obrizkaZN.csv")
         .defer(d3.csv, "data/vysadzennjaZN.csv")
         .defer(d3.csv, "vydalennia_new.csv")
@@ -50,10 +44,10 @@ function getRandomArbitrary(min, max) {
 
             debugger
 
-            var newestDate = newD.sort((a, b) => new Date(b.orderDate) - new Date(a.orderDate))[0].orderDate
-            var oldestDate = moment(newestDate, "YYYY-MM-DD").subtract(1, 'year').format("YYYY-MM-DD");
+            var newestDate = data.sort((a, b) => new Date(b.orderDate) - new Date(a.orderDate))[0].orderDate
+            var oldestDate = moment(newestDate, "YYYY-MM-DD").subtract(11, 'month').format("YYYY-MM-DD");
 
-            var filteredData = newD.filter(d => {
+            var filteredData = data.filter(d => {
             
 
                 // moment(str, "YY.MM.DD").subtract(n, "year").format("YY.MM");
