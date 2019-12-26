@@ -142,8 +142,8 @@ function createMap(data, branch, planted) {
     legend1.onAdd = function (mymap) {
 
         var div = L.DomUtil.create('div', 'info legend'),
-            grades = ["#ff005a", "#ffb74b"],
-            labels = ["Видалені дерева","Дерева, які потребують видалення"];
+            grades = ["#ff005a"],
+            labels = ["Видалені дерева"];
 
         // loop through our density intervals and generate a label with a colored square for each interval
         for (var i = 0; i < grades.length; i++) {
@@ -436,8 +436,6 @@ function createMap(data, branch, planted) {
     // Тут я працюю над тим, щоб координати змінювались разом із зумом
     mymap.on('zoomend', function () {
         //var currZoom = mymap.getZoom();
-
-        debugger;
 
         geojsonLayer.eachLayer(function(layer){
             var currZoom = mymap.getZoom();
