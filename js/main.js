@@ -43,24 +43,50 @@ function getRandomArbitrary(min, max) {
             if (err) throw err;
 
 
+
+
+            ///////////////////////////////////////////////////////////////////////
+
             var newestDate = data.sort((a, b) => new Date(b.orderDate) - new Date(a.orderDate))[0].orderDate
             var oldestDate = moment(newestDate, "YYYY-MM-DD").subtract(11, 'month').format("YYYY-MM-DD");
 
             var filteredData = data.filter(d => {
-            
-
+    
                 // moment(str, "YY.MM.DD").subtract(n, "year").format("YY.MM");
                 return ((d.latitude != 'null') & (d.orderDate > oldestDate))
             })
 
-            // filteredData.sort((a, b) => new Date(a.orderDate) - new Date(b.orderDate));
+            //////////////////////////////////////////////////////////////////////////
 
+            var newestDateBranch = branch.sort((a, b) => new Date(b.orderDate) - new Date(a.orderDate))[0].orderDate
+            var oldestDateBranch = moment(newestDateBranch, "YYYY-MM-DD").subtract(11, 'month').format("YYYY-MM-DD");
+
+            var filteredDataBranch = branch.filter(d => {
+    
+                // moment(str, "YY.MM.DD").subtract(n, "year").format("YY.MM");
+                return ((d.latitude != 'null') & (d.orderDate > oldestDateBranch))
+            })
+
+
+
+            //////////////////////////////////////////////////////////////////////////
+
+            var newestDatePlanting = planted.sort((a, b) => new Date(b.datePlanted) - new Date(a.datePlanted))[0].datePlanted
+            var oldestDatePlanting = moment(newestDatePlanting, "YYYY-MM-DD").subtract(11, 'month').format("YYYY-MM-DD");
+
+
+
+            var filteredDataPlanted = planted.filter(d => {
+    
+                // moment(str, "YY.MM.DD").subtract(n, "year").format("YY.MM");
+                return ((d.latitude != 'null') & (d.datePlanted > oldestDatePlanting))
+            })
 
             // var total = data.concat(filteredData)
 
 
-            createMap(filteredData, branch, planted);
-            createBar(filteredData, branch, planted);
+            createMap(filteredData, filteredDataBranch, filteredDataPlanted);
+            createBar(filteredData, filteredDataBranch, filteredDataPlanted);
 
 
         });

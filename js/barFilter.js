@@ -108,7 +108,12 @@
         .data(barChartData)
         .enter().append("rect")
         .attr("class", "bar")
-        .attr("x", function(d) { return x(d.key); })
+        .attr("x", function(d) { 
+            if (!x(d.key)) {
+                debugger
+            }
+            return x(d.key); 
+        })
         .attr("width", x.bandwidth())
         .attr("y", function(d) { return y(d.value); })
         .attr("height", function(d) { return height - y(d.value); })
@@ -142,7 +147,7 @@
 
     function returnColors() {
 
-        d3.select(".selectedBar").attr("class", "#bar");
+        d3.select(".selectedBar").attr("class", "bar");
 
         geojsonLayer.setStyle(function(feature){
             return styleForLayer(feature);
