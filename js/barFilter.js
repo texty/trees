@@ -120,15 +120,15 @@
             returnColors();
             d3.select(this).attr("class", "selectedBar");
             geojsonLayer.setStyle(function(feature){
-                if (!(feature.properties.orderDate.split("-")[1] ===  d.key.split(".")[1]))
+                if (!(feature.properties.orderDate.split("-").splice(0,2).join('.').slice(2) ===  d.key))
                     return {fillColor: 'rgba(0,0,0,0)'}
             });
             geojsonLayerBranch.setStyle(function(feature){
-                if (!(feature.properties.orderDate.split("-")[1] ===  d.key.split(".")[1]))
+                if (!(feature.properties.orderDate.split("-").splice(0,2).join('.').slice(2) ===  d.key))
                     return {fillColor: 'rgba(0,0,0,0)'}
             });
             geojsonLayerPlanted.setStyle(function(feature){
-                if (!(feature.properties.datePlanted.split("-")[1] ===  d.key.split(".")[1]))
+                if (!(feature.properties.datePlanted.split("-").splice(0,2).join('.').slice(2) ===  d.key))
                     return {fillColor: 'rgba(0,0,0,0)'}
             });
         });
