@@ -43,28 +43,26 @@ function getRandomArbitrary(min, max) {
             if (err) throw err;
 
 
-
-
             ///////////////////////////////////////////////////////////////////////
 
-            var newestDate = data.sort((a, b) => new Date(b.orderDate) - new Date(a.orderDate))[0].orderDate
+            var newestDate = data.sort((a, b) => new Date(b.reportDate) - new Date(a.reportDate))[0].reportDate
             var oldestDate = moment(newestDate, "YYYY-MM-DD").subtract(11, 'month').format("YYYY-MM-DD");
 
             var filteredData = data.filter(d => {
     
                 // moment(str, "YY.MM.DD").subtract(n, "year").format("YY.MM");
-                return ((d.latitude != 'null') & (d.orderDate > oldestDate))
+                return ((d.latitude != 'null') & (d.reportDate > oldestDate))
             })
 
             //////////////////////////////////////////////////////////////////////////
 
-            var newestDateBranch = branch.sort((a, b) => new Date(b.orderDate) - new Date(a.orderDate))[0].orderDate
+            var newestDateBranch = branch.sort((a, b) => new Date(b.reportDate) - new Date(a.reportDate))[0].orderDate
             var oldestDateBranch = moment(newestDateBranch, "YYYY-MM-DD").subtract(11, 'month').format("YYYY-MM-DD");
 
             var filteredDataBranch = branch.filter(d => {
     
                 // moment(str, "YY.MM.DD").subtract(n, "year").format("YY.MM");
-                return ((d.latitude != 'null') & (d.orderDate > oldestDateBranch))
+                return ((d.latitude != 'null') & (d.reportDate > oldestDateBranch))
             })
 
 

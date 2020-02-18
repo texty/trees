@@ -35,14 +35,14 @@
 
     data = data
         //.filter(function(d){return d.orderDate !== "NotYet"})
-        .filter(function(d){return d.orderDate || d.datePlanted});
+        .filter(function(d){return d.reportDate || d.datePlanted});
 
 
     var barChartData = d3.nest()
-        .key(function(d) { if (d.orderDate == undefined) {
+        .key(function(d) { if (d.reportDate == undefined) {
             return d.datePlanted.slice(2,-3)
         } else {
-            return d.orderDate.slice(2,-3)
+            return d.reportDate.slice(2,-3)
         }
         })
         .sortKeys(d3.ascending)
@@ -52,6 +52,13 @@
     barChartData.forEach(function (d) {
         d.key = swapMonthAndYear(d.key);
     });
+
+    barChartData = d3.nest().key(d => d.key)
+    .sortKeys(d3.ascending)
+    .rollup(function(v) { 
+        return d3.sum(v, function(d) { return +d.value }) 
+    })
+    .entries(barChartData)
 
 
     var margin = {top: 0, right: 0, bottom: 0, left: 0};
@@ -125,7 +132,7 @@
             returnColors();
             d3.select(this).attr("class", "selectedBar");
             geojsonLayer.setStyle(function(feature){
-                if (!(feature.properties.orderDate.split("-").splice(0,2).join('.').slice(2) ===  d.key))
+                if (!(feature.properties.reportDate.split("-").splice(0,2).join('.').slice(2) ===  d.key))
                     return {fillColor: 'rgba(0,0,0,0)'}
             });
             geojsonLayerBranch.setStyle(function(feature){
@@ -192,7 +199,12 @@
 
     function swapMonthAndYear(str) {
         var a = str.split("-");
-        return a[0] + "." + a[1] ;
+        if (a.length == 1) {
+            return a[0] + ".01"
+        }
+        else {
+            return a[0] + "." + a[1] ;
+        }
     }
 
 
