@@ -108,8 +108,8 @@ function createMap(data, branch, planted) {
     
     overlayMaps = {
         "Видалення дерев": geojsonLayer,
-        /* "Обрізування гілок": geojsonLayerBranch,
-        "Висадження нових дерев": geojsonLayerPlanted */
+        "Обрізування гілок": geojsonLayerBranch,
+        // "Висадження нових дерев": geojsonLayerPlanted 
     };
 
     //L.control.layers(overlayMaps,null,{collapsed:false}).addTo(mymap);

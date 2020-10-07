@@ -35,13 +35,16 @@ function getRandomArbitrary(min, max) {
 
 
     d3.queue()
-        .defer(d3.csv, "data/vydalennja.csv")
-        .defer(d3.csv, "data/obrizkaZN.csv")
+        .defer(d3.csv, "processing/results/vydalennja.csv")
+        .defer(d3.csv, "processing/results/obrizka.csv")
         .defer(d3.csv, "data/vysadzennja.csv")
-        .defer(d3.csv, "vydalennia_new.csv")
+        // .defer(d3.csv, "vydalennia_new.csv")
         .await(function (err, data, branch, planted, newD) {
             if (err) throw err;
 
+            function isValidDate(d) {
+                return d instanceof Date && !isNaN(d);
+              }
 
             ///////////////////////////////////////////////////////////////////////
 
@@ -51,18 +54,24 @@ function getRandomArbitrary(min, max) {
             var filteredData = data.filter(d => {
     
                 // moment(str, "YY.MM.DD").subtract(n, "year").format("YY.MM");
-                return ((d.latitude != 'null') & (d.reportDate > oldestDate))
+                return ((d.latitude != 'null') & (d.longitude != 'null') & ((d.reportDate) > oldestDate))
             })
 
             //////////////////////////////////////////////////////////////////////////
 
-            var newestDateBranch = branch.sort((a, b) => new Date(b.reportDate) - new Date(a.reportDate))[0].orderDate
+            var newestDateBranch = branch.sort((a, b) => new Date(b.orderDate) - new Date(a.orderDate))[0].orderDate
             var oldestDateBranch = moment(newestDateBranch, "YYYY-MM-DD").subtract(11, 'month').format("YYYY-MM-DD");
+
+            
+
+            var newestDateBranch = new Date(Math.max(...branch.map(e => new Date(e.orderDate)).filter(d => isValidDate(d))))
+            var oldestDateBranch = new Date(Math.min(...branch.map(e => new Date(e.orderDate)).filter(d => isValidDate(d))))
+
 
             var filteredDataBranch = branch.filter(d => {
     
                 // moment(str, "YY.MM.DD").subtract(n, "year").format("YY.MM");
-                return ((d.latitude != 'null') & (d.reportDate > oldestDateBranch))
+                return (!isNaN(Number( d.latitude) )) & (!isNaN( Number(d.longitude) )) & (new Date(d.orderDate) > oldestDateBranch)
             })
 
 
@@ -80,7 +89,7 @@ function getRandomArbitrary(min, max) {
                 return ((d.latitude != 'null') & (d.datePlanted > oldestDatePlanting))
             })
 
-            // var total = data.concat(filteredData)
+            var total = data.concat(filteredData)
 
 
             createMap(filteredData, filteredDataBranch, filteredDataPlanted);
