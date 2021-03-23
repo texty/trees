@@ -38,7 +38,7 @@ function getRandomArbitrary(min, max) {
 
     d3.queue()
         .defer(d3.csv, "data/vydalennja.csv")
-        .defer(d3.csv, "processing/results/obrizka.csv")
+        .defer(d3.csv, "data/obrizka.csv")
         .defer(d3.csv, "data/vysadzennja.csv")
         // .defer(d3.csv, "vydalennia_new.csv")
         .await(function (err, data, branch, planted, newD) {
