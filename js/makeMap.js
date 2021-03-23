@@ -108,7 +108,7 @@ function createMap(data, branch, planted) {
     
     overlayMaps = {
         "Видалення дерев": geojsonLayer,
-        "Обрізування гілок": geojsonLayerBranch,
+        // "Обрізування гілок": geojsonLayerBranch,
         // "Висадження нових дерев": geojsonLayerPlanted 
     };
 

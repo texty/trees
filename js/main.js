@@ -23,7 +23,9 @@ function styleForLayer(feature) {
         return {fillColor: "#ff005a", color: "rgba(0, 0, 0, 0);", fillOpacity: "0.75"};
     }
     else {
-        return {fillColor: "#ffb74b", color: "rgba(0, 0, 0, 0);", fillOpacity: "0.75"};
+        return {fillColor: "#ff005a", color: "rgba(0, 0, 0, 0);", fillOpacity: "0.75"};
+        // Так було раніше коли ми враховували кілька станів
+        // return {fillColor: "#ffb74b", color: "rgba(0, 0, 0, 0);", fillOpacity: "0.75"};
     }
 }
 
@@ -54,7 +56,8 @@ function getRandomArbitrary(min, max) {
             var filteredData = data.filter(d => {
     
                 // moment(str, "YY.MM.DD").subtract(n, "year").format("YY.MM");
-                return ((d.latitude != 'null') & (d.longitude != 'null') & ((d.reportDate) > oldestDate))
+                // return ((d.latitude != 'null') & (d.longitude != 'null') & ((d.reportDate) > oldestDate))
+                return (!isNaN(Number( d.latitude) )) & (!isNaN( Number(d.longitude) ))  & (d.reportDate > oldestDate)
             })
 
             //////////////////////////////////////////////////////////////////////////
